@@ -26,10 +26,7 @@
     padding: 36px 16px 80px;
   }
 
-  .header {
-    text-align: center;
-    margin-bottom: 36px;
-  }
+  .header { text-align: center; margin-bottom: 36px; }
   .header-badge {
     display: inline-block;
     border: 1px solid rgba(255,255,255,0.18);
@@ -49,11 +46,7 @@
     line-height: 1.25;
     margin-bottom: 10px;
   }
-  .header p {
-    color: rgba(255,255,255,0.3);
-    font-size: 11px;
-    letter-spacing: 3px;
-  }
+  .header p { color: rgba(255,255,255,0.3); font-size: 11px; letter-spacing: 3px; }
 
   .card {
     max-width: 460px;
@@ -82,12 +75,7 @@
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
   }
-  .step-title {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--text-dark);
-  }
+  .step-title { font-family: 'Noto Serif SC', serif; font-size: 14px; font-weight: 700; color: var(--text-dark); }
 
   .form-group { margin-bottom: 14px; }
   label.field-label {
@@ -114,24 +102,9 @@
   }
   select:focus { border-color: var(--text-dark); background-color: white; }
 
-  .q-counter {
-    font-size: 11px;
-    color: var(--text-soft);
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-  }
-  .q-title {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 16px;
-    line-height: 1.55;
-  }
-  .options-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-  }
+  .q-counter { font-size: 11px; color: var(--text-soft); letter-spacing: 1px; margin-bottom: 10px; }
+  .q-title { font-size: 15px; font-weight: 700; color: var(--text-dark); margin-bottom: 16px; line-height: 1.55; }
+  .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .opt-btn {
     background: #fafafa;
     border: 1.5px solid #ebebeb;
@@ -146,26 +119,10 @@
     line-height: 1.45;
   }
   .opt-btn:hover { border-color: #aaa; background: white; color: var(--text-dark); }
-  .opt-btn.selected {
-    border-color: var(--text-dark);
-    background: var(--text-dark);
-    color: white;
-    font-weight: 700;
-  }
+  .opt-btn.selected { border-color: var(--text-dark); background: var(--text-dark); color: white; font-weight: 700; }
 
-  .progress-bar {
-    height: 2px;
-    background: #eee;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%;
-    background: var(--text-dark);
-    border-radius: 2px;
-    transition: width 0.4s ease;
-  }
+  .progress-bar { height: 2px; background: #eee; border-radius: 2px; margin-bottom: 20px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--text-dark); border-radius: 2px; transition: width 0.4s ease; }
 
   .btn-primary {
     background: var(--text-dark);
@@ -186,10 +143,7 @@
   .btn-primary:active { transform: translateY(0); }
   .btn-primary:disabled { opacity: 0.3; cursor: not-allowed; transform: none; }
 
-  .spinner-wrap {
-    text-align: center;
-    padding: 40px 0;
-  }
+  .spinner-wrap { text-align: center; padding: 40px 0; }
   .spinner {
     width: 36px; height: 36px;
     border: 2px solid rgba(255,255,255,0.08);
@@ -202,18 +156,8 @@
   .spinner-text { color: rgba(255,255,255,0.35); font-size: 13px; letter-spacing: 1px; }
 
   #result { display: none; max-width: 460px; margin: 0 auto; }
-
-  .result-header {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-  .result-header h2 {
-    font-family: 'Noto Serif SC', serif;
-    color: white;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
+  .result-header { text-align: center; margin-bottom: 24px; }
+  .result-header h2 { font-family: 'Noto Serif SC', serif; color: white; font-size: 22px; font-weight: 700; margin-bottom: 6px; }
   .result-header p { color: rgba(255,255,255,0.3); font-size: 11px; letter-spacing: 2px; }
 
   .top-idol-card {
@@ -225,8 +169,7 @@
     animation: fadeUp 0.45s ease both;
   }
   .top-photo-area {
-    width: 100%;
-    height: 260px;
+    width: 100%; height: 260px;
     background: #111;
     position: relative;
     overflow: hidden;
@@ -234,21 +177,14 @@
   }
   .top-photo-area img {
     width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: top center;
+    object-fit: cover; object-position: top center;
     display: block;
     filter: grayscale(20%);
     transition: filter 0.5s;
   }
   .top-photo-area img:hover { filter: grayscale(0%); }
-  .top-photo-placeholder {
-    color: rgba(255,255,255,0.08);
-    font-size: 64px;
-    user-select: none;
-  }
-  .photo-loading-inner {
-    display: flex; flex-direction: column; align-items: center; gap: 10px;
-  }
+  .top-photo-placeholder { color: rgba(255,255,255,0.08); font-size: 64px; user-select: none; }
+  .photo-loading-inner { display: flex; flex-direction: column; align-items: center; gap: 10px; }
   .photo-spinner {
     width: 28px; height: 28px;
     border: 2px solid rgba(255,255,255,0.1);
@@ -259,54 +195,17 @@
   .photo-spinner-text { color: rgba(255,255,255,0.25); font-size: 12px; }
 
   .rank-crown {
-    position: absolute;
-    top: 14px; left: 14px;
-    background: white;
-    color: var(--text-dark);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    padding: 5px 12px;
-    border-radius: 20px;
+    position: absolute; top: 14px; left: 14px;
+    background: white; color: var(--text-dark);
+    font-size: 10px; font-weight: 800; letter-spacing: 2px;
+    padding: 5px 12px; border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   }
-  .top-idol-info {
-    padding: 20px 20px 22px;
-  }
-  .top-group-tag {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: var(--text-soft);
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-  .top-idol-name {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 12px;
-  }
-  .match-tag {
-    display: inline-block;
-    background: var(--text-dark);
-    color: white;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 5px 14px;
-    border-radius: 20px;
-    letter-spacing: 0.5px;
-  }
-  .match-score {
-    display: inline-block;
-    margin-left: 10px;
-    background: #f0f0f0;
-    color: #666;
-    font-size: 10px;
-    padding: 3px 8px;
-    border-radius: 12px;
-  }
+  .top-idol-info { padding: 20px 20px 22px; }
+  .top-group-tag { font-size: 10px; font-weight: 700; letter-spacing: 3px; color: var(--text-soft); text-transform: uppercase; margin-bottom: 6px; }
+  .top-idol-name { font-family: 'Noto Serif SC', serif; font-size: 24px; font-weight: 700; color: var(--text-dark); margin-bottom: 12px; }
+  .match-tag { display: inline-block; background: var(--text-dark); color: white; font-size: 11px; font-weight: 700; padding: 5px 14px; border-radius: 20px; letter-spacing: 0.5px; }
+  .match-score { display: inline-block; margin-left: 10px; background: #f0f0f0; color: #666; font-size: 10px; padding: 3px 8px; border-radius: 12px; }
 
   .others-card {
     background: var(--card-bg);
@@ -316,70 +215,20 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     animation: fadeUp 0.45s ease 0.15s both;
   }
-  .others-header {
-    padding: 16px 20px 12px;
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--text-soft);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #f5f5f5;
-  }
-  .other-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 14px 20px;
-    border-bottom: 1px solid #f5f5f5;
-    transition: background 0.15s;
-  }
+  .others-header { padding: 16px 20px 12px; font-size: 10px; font-weight: 700; color: var(--text-soft); letter-spacing: 3px; text-transform: uppercase; border-bottom: 1px solid #f5f5f5; }
+  .other-row { display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid #f5f5f5; transition: background 0.15s; }
   .other-row:last-child { border-bottom: none; }
   .other-row:hover { background: #fafafa; }
-  .other-rank-num {
-    font-family: 'Noto Serif SC', serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #ddd;
-    width: 24px;
-    flex-shrink: 0;
-    text-align: center;
-  }
-  .other-divider {
-    width: 1px; height: 30px;
-    background: #eee;
-    flex-shrink: 0;
-  }
+  .other-rank-num { font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700; color: #ddd; width: 24px; flex-shrink: 0; text-align: center; }
+  .other-divider { width: 1px; height: 30px; background: #eee; flex-shrink: 0; }
   .other-info { flex: 1; min-width: 0; }
-  .other-name {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .other-group {
-    font-size: 12px;
-    color: var(--text-soft);
-  }
-  .other-desc {
-    font-size: 11px;
-    color: var(--text-soft);
-    text-align: right;
-    flex-shrink: 0;
-    max-width: 78px;
-    line-height: 1.45;
-  }
-  .other-score {
-    font-size: 10px;
-    color: #888;
-    margin-top: 2px;
-  }
+  .other-name { font-size: 15px; font-weight: 700; color: var(--text-dark); margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .other-group { font-size: 12px; color: var(--text-soft); }
+  .other-desc { font-size: 11px; color: var(--text-soft); text-align: right; flex-shrink: 0; max-width: 78px; line-height: 1.45; }
+  .other-score { font-size: 10px; color: #888; margin-top: 2px; }
 
   .retry-btn {
-    display: block;
-    width: 100%;
+    display: block; width: 100%;
     background: transparent;
     border: 1px solid rgba(255,255,255,0.12);
     color: rgba(255,255,255,0.35);
@@ -537,27 +386,25 @@
 
 <script>
 const idolPhotoMap = {
-  "金智秀 Jisoo": "./idol_photos/金智秀 Jisoo.jpg",
-  "金珍妮 Jennie": "./idol_photos/金珍妮 Jennie.jpg",
-  "朴彩英 Rosé": "./idol_photos/朴彩英 Rosé.jpg",
-  "Lisa": "./idol_photos/Lisa.jpg",
-  "林娜琏": "./idol_photos/林娜琏.jpg",
-  "周子瑜": "./idol_photos/周子瑜.jpg",
-  "柳智敏 Karina": "./idol_photos/柳智敏 Karina.jpg",
-  "宁艺卓 Ningning": "./idol_photos/宁艺卓 Ningning.jpg",
-  "Minji": "./idol_photos/Minji.jpg",
-  "范玉欣 Hanni": "./idol_photos/范玉欣 Hanni.jpg",
-  "安宥真 Yujin": "./idol_photos/安宥真 Yujin.jpg",
-  "凑崎纱夏 Sana": "./idol_photos/凑崎纱夏 Sana.jpg",
-  "名井南 Mina": "./idol_photos/名井南 Mina.jpg",
-  "田中杏奈": "./idol_photos/田中杏奈.jpg",
-  "中村一叶": "./idol_photos/中村一叶.jpg",
-"内永绘里 Giselle": "./idol_photos/内永绘里 Giselle.jpg",
-"金旼炡 Winter": "./idol_photos/金旼炡 Winter.jpg",
-"宁艺卓 Ningning": "./idol_photos/宁艺卓 Ningning.jpg",
-  "平井桃 Momo": "./idol_photos/平井桃 Momo.jpg",
-  "Wonyoung": "./idol_photos/Wonyoung.jpg",
-  
+  "金智秀 Jisoo":      "./idol_photos/金智秀 Jisoo.jpg",
+  "金珍妮 Jennie":     "./idol_photos/金珍妮 Jennie.jpg",
+  "朴彩英 Rosé":       "./idol_photos/朴彩英 Rosé.jpg",
+  "Lisa":              "./idol_photos/Lisa.jpg",
+  "林娜琏":            "./idol_photos/林娜琏.jpg",
+  "周子瑜":            "./idol_photos/周子瑜.jpg",
+  "柳智敏 Karina":     "./idol_photos/柳智敏 Karina.jpg",
+  "宁艺卓 Ningning":   "./idol_photos/宁艺卓 Ningning.jpg",
+  "Minji":             "./idol_photos/Minji.jpg",
+  "范玉欣 Hanni":      "./idol_photos/范玉欣 Hanni.jpg",
+  "安宥真 Yujin":      "./idol_photos/安宥真 Yujin.jpg",
+  "凑崎纱夏 Sana":     "./idol_photos/凑崎纱夏 Sana.jpg",
+  "名井南 Mina":       "./idol_photos/名井南 Mina.jpg",
+  "田中杏奈":          "./idol_photos/田中杏奈.jpg",
+  "中村一叶":          "./idol_photos/中村一叶.jpg",
+  "内永绘里 Giselle":  "./idol_photos/内永绘里 Giselle.jpg",
+  "金旼炡 Winter":     "./idol_photos/金旼炡 Winter.jpg",
+  "平井桃 Momo":       "./idol_photos/平井桃 Momo.jpg",
+  "Wonyoung":          "./idol_photos/Wonyoung.jpg",
 };
 
 const groupData = [
@@ -585,79 +432,102 @@ const groupData = [
   {g:"KISS OF LIFE", m:["Julie","Natty","Belle","Haneul"]}
 ];
 
+/*
+  五个问题使用五个不同的 trait 字段名，idol 数据库中均有对应字段：
+  Q1 → vibe        （深夜气质）
+  Q2 → style       （风格偏好）
+  Q3 → liveExp     （演唱会体验偏好）
+  Q4 → personality （相处方式）
+  Q5 → talent      （才能欣赏点）
+*/
 const questions = [
   { q:"深夜突然失眠，你会怎么做？",
     opts:["🌙 发呆看天花板","📱 刷手机到天亮","📖 起来看书写字","🎵 戴耳机听歌"],
-    traits: ["personalityt", "personalityt", "personalityt", "personalityt"],
-    values: [2,1,4,3] },
+    traits:["vibe","vibe","vibe","vibe"],
+    values:[2,1,4,3] },
   { q:"你更欣赏哪种风格？",
     opts:["🖤 酷冷系 Dark","🌸 可爱系 Cute","🔥 御姐系 Yujie","✨ 清纯系 Pure"],
-    traits: ["style", "style", "style", "style"],
-    values: [3,1,4,2] },
+    traits:["style","style","style","style"],
+    values:[3,1,4,2] },
   { q:"如果能去一次演唱会，你想要哪种体验？",
     opts:["💜 前排近距离","🎉 大合唱气氛","📷 拍到最好角度","🪄 后台见面会"],
-    traits: ["talentw", "talentw", "talentw", "talentw"],
-    values: [4,2,1,3] },
+    traits:["liveExp","liveExp","liveExp","liveExp"],
+    values:[4,2,1,3] },
   { q:"你理想中和爱豆的相处方式？",
     opts:["👯 像朋友互怼","🥰 像哄你的姐姐","🧊 保持神秘距离","🌷 温柔陪伴"],
-    traits: ["personality", "personality", "personality", "personality"],
-    values: [2,4,3,1] },
+    traits:["personality","personality","personality","personality"],
+    values:[2,4,3,1] },
   { q:"你最会因为爱豆什么表现而喜欢她？",
     opts:["🎤 绝美歌喉","💃 舞台表现力","🎭 综艺感爆棚","🎨 美丽的容貌"],
-    traits: ["talent", "talent", "talent", "talent"],
-    values: [1,3,2,4] },
+    traits:["talent","talent","talent","talent"],
+    values:[1,3,2,4] },
 ];
 
 let idolDatabase = [];
 let currentQ = 0, userAnswers = [], selectedOption = null;
 
 (function initData() {
+  // 覆盖五个 trait 字段：vibe / style / liveExp / personality / talent
   const traitOverrides = {
-    "名井南 Mina": { style: 3, talent: 4 },
-    "周子瑜": { style: 3, talent: 4 },
-    "朴慜柱": { style: 3 },
-    "李沅禧": { style: 1 },
-    "吴海嫄": { style: 1 },
-    "直井怜 Rei": { style: 1 },
-    "凑崎纱夏 Sana": { style: 4, talent: 4 },
-    "柳智敏 Karina": { style: 4  , personality: 4 },
-    "金志垣 Liz": { style: 4 },
-    "内永绘里 Giselle": { style: 4 },
-    "中村一叶": { style: 2, talent: 3 },
-    "许允真": { personality: 1 },
-    "安宥真 Yujin": { personality: 1 , talent: 2 },
-    "田中杏奈": { talent: 4 },
-    "Wonyoung": { talent: 4 , personality: 4  },
-    "金旼炡 Winter": { talent: 4 },
-    "朴志效": { talent: 1 },
-    "林娜琏": { talent: 1 },
-    "Miyeon": {talent: 4 , personality: 2},
-    "裴珠泫 Irene": {style: 3, talent: 4},
-    "金泰妍": { talent: 1 },
-    "平井桃 Momo": { talent: 3 },
-    "金采源": { style: 3, talent: 1 },
-    "薛仑娥 Sullyoon": { talent: 4 , style: 1},
-    "Natty": { talent: 3 }
-    
+    // style
+    "名井南 Mina":       { style:3, talent:4 },
+    "周子瑜":            { style:3, talent:4 },
+    "朴慜柱":            { style:3 },
+    "李沅禧":            { style:1 },
+    "吴海嫄":            { style:1 },
+    "直井怜 Rei":        { style:1 },
+    "凑崎纱夏 Sana":     { style:4, talent:4 },
+    "柳智敏 Karina":     { style:4, personality:4 },
+    "金志垣 Liz":        { style:4 },
+    "内永绘里 Giselle":  { style:4 },
+    "中村一叶":          { style:2, talent:3 },
+    "薛仑娥 Sullyoon":   { style:1, talent:4 },
+    "裴珠泫 Irene":      { style:3, talent:4 },
+    "金采源":            { style:3, talent:1 },
+    // personality
+    "许允真":            { personality:1 },
+    "安宥真 Yujin":      { personality:1, talent:2 },
+    "Wonyoung":          { personality:4, talent:4 },
+    "Miyeon":            { personality:2, talent:4 },
+    // talent
+    "田中杏奈":          { talent:4 },
+    "金旼炡 Winter":     { talent:4 },
+    "朴志效":            { talent:1 },
+    "林娜琏":            { talent:1 },
+    "金泰妍":            { talent:1 },
+    "平井桃 Momo":       { talent:3 },
+    "Natty":             { talent:3 },
+    // vibe
+    "金珍妮 Jennie":     { vibe:3 },
+    "朴彩英 Rosé":       { vibe:4 },
+    "金智秀 Jisoo":      { vibe:2 },
+    "Lisa":              { vibe:3 },
+    "宋雨琦":            { vibe:3 },
+    "田小娟":            { vibe:3 },
+    "Hwasa":             { vibe:3 },
+    // liveExp
+    "申有娜":            { liveExp:3 },
+    "黄礼志":            { liveExp:4 },
+    "宫胁咲良 Sakura":   { liveExp:3 },
+    "范玉欣 Hanni":      { liveExp:2 },
   };
 
   groupData.forEach(group => {
     group.m.forEach(name => {
-      const hash = name.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-      const rnd = (seed) => {
-        const x = Math.sin(seed) * 10000;
-        return x - Math.floor(x);
-      };
+      const hash = name.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+      const rnd  = s => { const x = Math.sin(s) * 10000; return x - Math.floor(x); };
       let base = {
-        name: name,
-        group: group.g,
-        zodiac: Math.floor(rnd(hash) * 12) + 1,
-        mbti: Math.floor(rnd(hash + 100) * 16) + 1,
-        blood: Math.floor(rnd(hash + 200) * 4) + 1,
-        bazi: Math.floor(rnd(hash + 300) * 10) + 1,
-        style: Math.floor(rnd(hash + 400) * 4) + 1,
-        personality: Math.floor(rnd(hash + 500) * 4) + 1,
-        talent: Math.floor(rnd(hash + 600) * 4) + 1,
+        name,
+        group:       group.g,
+        zodiac:      Math.floor(rnd(hash)       * 12) + 1,
+        mbti:        Math.floor(rnd(hash + 100) * 16) + 1,
+        blood:       Math.floor(rnd(hash + 200) *  4) + 1,
+        bazi:        Math.floor(rnd(hash + 300) * 10) + 1,
+        style:       Math.floor(rnd(hash + 400) *  4) + 1,
+        personality: Math.floor(rnd(hash + 500) *  4) + 1,
+        talent:      Math.floor(rnd(hash + 600) *  4) + 1,
+        vibe:        Math.floor(rnd(hash + 700) *  4) + 1,
+        liveExp:     Math.floor(rnd(hash + 800) *  4) + 1,
         img: idolPhotoMap[name] || `https://picsum.photos/id/${1000 + hash % 100}/800/1200`
       };
       if (traitOverrides[name]) base = { ...base, ...traitOverrides[name] };
@@ -698,11 +568,7 @@ function selectOpt(el, idx) {
 function nextQuestion() {
   if (selectedOption === null) return;
   const q = questions[currentQ];
-  userAnswers.push({
-    trait: q.traits[selectedOption],
-    value: q.values[selectedOption],
-    idx: currentQ
-  });
+  userAnswers.push({ trait: q.traits[selectedOption], value: q.values[selectedOption], idx: currentQ });
   currentQ++;
   if (currentQ < questions.length) {
     renderQuestion();
@@ -716,41 +582,54 @@ function nextQuestion() {
 function calculateAndShow() {
   const userData = {
     zodiac: parseInt(document.getElementById('zodiac').value),
-    mbti: parseInt(document.getElementById('mbti').value),
-    blood: parseInt(document.getElementById('blood').value),
-    bazi: parseInt(document.getElementById('bazi').value)
+    mbti:   parseInt(document.getElementById('mbti').value),
+    blood:  parseInt(document.getElementById('blood').value),
+    bazi:   parseInt(document.getElementById('bazi').value)
   };
 
-  const finalSel = userAnswers.find(item => item.idx === 4);
-  const voiceList = ["朴志效", "林娜琏", "金泰妍"];
-  const danceList = ["平井桃 Momo", "中村一叶", "Natty"];
-  const faceList = ["田中杏奈", "凑崎纱夏 Sana", "名井南 Mina", "周子瑜", "中村一叶", "Wonyoung", "金旼炡 Winter"];
+  // Q5（idx=4）答案用于特殊加分
+  const finalSel   = userAnswers.find(item => item.idx === 4);
+  const voiceList  = ["朴志效","林娜琏","金泰妍"];
+  const danceList  = ["平井桃 Momo","中村一叶","Natty"];
+  const faceList   = ["田中杏奈","凑崎纱夏 Sana","名井南 Mina","周子瑜","中村一叶","Wonyoung","金旼炡 Winter"];
 
   const scoredIdols = idolDatabase.map(idol => {
     let score = 0;
+
+    // 基础命理（四项各满15分，总60分）
     score += 15 - Math.abs(idol.zodiac - userData.zodiac) * 1.25;
-    score += 15 - Math.abs(idol.mbti - userData.mbti) * 0.9375;
-    score += 15 - Math.abs(idol.blood - userData.blood) * 3.75;
-    score += 15 - Math.abs(idol.bazi - userData.bazi) * 1.5;
+    score += 15 - Math.abs(idol.mbti   - userData.mbti)   * 0.9375;
+    score += 15 - Math.abs(idol.blood  - userData.blood)  * 3.75;
+    score += 15 - Math.abs(idol.bazi   - userData.bazi)   * 1.5;
+
+    // 灵魂问答（5题各满8分，总40分）
+    // 每个 answer.trait 均对应 idol 数据库中真实存在的字段
     userAnswers.forEach(answer => {
       const diff = Math.abs(idol[answer.trait] - answer.value);
       score += (8 - diff * 2);
     });
 
+    // Q5 特殊加分（最多+10）
     if (finalSel) {
       if (finalSel.value === 1 && voiceList.includes(idol.name)) score += 7;
       if (finalSel.value === 3 && danceList.includes(idol.name)) score += 7;
       if (finalSel.value === 4) {
         if (faceList.includes(idol.name)) score += 7;
-        if (idol.name === "Wonyoung") score += 3;
+        if (idol.name === "Wonyoung")     score += 3;
       }
     }
 
-    score = Math.max(0, Math.min(100, score + (Math.random() * 3 - 1.5)));
-    return { ...idol, matchScore: score };
+    // 随机扰动 ±8，保证每次结果有差异
+    score += (Math.random() * 16 - 8);
+
+    // 映射到 75–99% 区间（理论最高约107分）
+    const normalized   = Math.max(0, Math.min(1, score / 107));
+    const displayScore = 75 + normalized * 24;
+
+    return { ...idol, matchScore: displayScore };
   });
 
-  const topIdols = scoredIdols.sort((a, b) => b.matchScore - a.matchScore).slice(0, 5);
+  const topIdols   = scoredIdols.sort((a, b) => b.matchScore - a.matchScore).slice(0, 5);
   const otherDescs = ["灵魂伴侣·相通","默契搭档·互补","性格互补·天成","天缘奇遇·相交"];
 
   const topIdol = topIdols[0];
@@ -778,20 +657,17 @@ function calculateAndShow() {
 
 function loadTopPhoto(idol) {
   try {
-    const img = new Image();
+    const img     = new Image();
     const timeout = setTimeout(() => showPhotoFallback(), 5000);
     img.onload = () => {
       clearTimeout(timeout);
       img.style.cssText = 'width:100%;height:100%;object-fit:cover;object-position:top center;display:block;filter:grayscale(20%);transition:filter 0.5s;';
       img.onmouseover = () => img.style.filter = 'grayscale(0%)';
-      img.onmouseout = () => img.style.filter = 'grayscale(20%)';
+      img.onmouseout  = () => img.style.filter = 'grayscale(20%)';
       const el = document.getElementById('photoLoadingEl');
       if (el) el.replaceWith(img);
     };
-    img.onerror = () => {
-      clearTimeout(timeout);
-      showPhotoFallback();
-    };
+    img.onerror = () => { clearTimeout(timeout); showPhotoFallback(); };
     img.src = idol.img;
   } catch(e) {
     showPhotoFallback();
@@ -801,8 +677,8 @@ function loadTopPhoto(idol) {
 function showPhotoFallback() {
   const el = document.getElementById('photoLoadingEl');
   if (el) {
-    el.innerHTML = '';
-    el.className = 'top-photo-placeholder';
+    el.innerHTML  = '';
+    el.className  = 'top-photo-placeholder';
     el.textContent = '✦';
   }
 }
