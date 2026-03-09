@@ -588,7 +588,7 @@ const groupData = [
 const questions = [
   { q:"深夜突然失眠，你会怎么做？",
     opts:["🌙 发呆看天花板","📱 刷手机到天亮","📖 起来看书写字","🎵 戴耳机听歌"],
-    traits: ["personality", "personality", "personality", "personality"],
+    traits: ["personalityt", "personalityt", "personalityt", "personalityt"],
     values: [2,1,4,3] },
   { q:"你更欣赏哪种风格？",
     opts:["🖤 酷冷系 Dark","🌸 可爱系 Cute","🔥 御姐系 Yujie","✨ 清纯系 Pure"],
@@ -596,7 +596,7 @@ const questions = [
     values: [3,1,4,2] },
   { q:"如果能去一次演唱会，你想要哪种体验？",
     opts:["💜 前排近距离","🎉 大合唱气氛","📷 拍到最好角度","🪄 后台见面会"],
-    traits: ["talent", "talent", "talent", "talent"],
+    traits: ["talentw", "talentw", "talentw", "talentw"],
     values: [4,2,1,3] },
   { q:"你理想中和爱豆的相处方式？",
     opts:["👯 像朋友互怼","🥰 像哄你的姐姐","🧊 保持神秘距离","🌷 温柔陪伴"],
@@ -623,10 +623,11 @@ let currentQ = 0, userAnswers = [], selectedOption = null;
     "柳智敏 Karina": { style: 4 },
     "金志垣 Liz": { style: 4 },
     "内永绘里 Giselle": { style: 4 },
-    "中村一叶": { style: 4, talent: 3 },
+    "中村一叶": { style: 2, talent: 3 },
     "许允真": { personality: 1 },
+    "安宥真 Yujin": { personality: 1 , talent: 2 },
     "田中杏奈": { talent: 4 },
-    "Wonyoung": { talent: 4 },
+    "Wonyoung": { talent: 4 , personality: 4  },
     "金旼炡 Winter": { talent: 4 },
     "朴志效": { talent: 1 },
     "林娜琏": { talent: 1 },
@@ -815,6 +816,7 @@ function resetAll() {
 </script>
 </body>
 </html>
+
 
 
 
