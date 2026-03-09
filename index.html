@@ -467,47 +467,53 @@ let idolDatabase = [];
 let currentQ = 0, userAnswers = [], selectedOption = null;
 
 (function initData() {
-  // 覆盖五个 trait 字段：vibe / style / liveExp / personality / talent
+  /*
+    traitOverrides 代表每位偶像"最契合"的用户偏好类型。
+    值域 1–4 对应各题的四个选项，2/3 是中间值，1/4 是极端值。
+    为避免极端值把某些偶像"锁死"（只有选到完全相同答案才能遇到），
+    所有极端值（原来的1或4）统一改为邻近的中间值（2或3），
+    保证每位偶像对各种选择都有一定基础分，只是在最契合的选项下额外更高。
+  */
   const traitOverrides = {
-    // style
-    "名井南 Mina":       { style:3, talent:4 },
-    "周子瑜":            { style:3, talent:4 },
+    // style：1=酷冷→2，4=清纯→3，2/3 不变
+    "名井南 Mina":       { style:3, talent:3 },   // 清纯→3，容貌→3
+    "周子瑜":            { style:3, talent:3 },
     "朴慜柱":            { style:3 },
-    "李沅禧":            { style:1 },
-    "吴海嫄":            { style:1 },
-    "直井怜 Rei":        { style:1 },
-    "凑崎纱夏 Sana":     { style:4, talent:4 },
-    "柳智敏 Karina":     { style:4, personality:4 },
-    "金志垣 Liz":        { style:4 },
-    "内永绘里 Giselle":  { style:4 },
+    "李沅禧":            { style:2 },              // 酷冷→2
+    "吴海嫄":            { style:2 },
+    "直井怜 Rei":        { style:2 },
+    "凑崎纱夏 Sana":     { style:3, talent:3 },
+    "柳智敏 Karina":     { style:3, personality:3 },
+    "金志垣 Liz":        { style:3 },
+    "内永绘里 Giselle":  { style:3 },
     "中村一叶":          { style:2, talent:3 },
-    "薛仑娥 Sullyoon":   { style:1, talent:4 },
-    "裴珠泫 Irene":      { style:3, talent:4 },
-    "金采源":            { style:3, talent:1 },
-    // personality
-    "许允真":            { personality:1 },
-    "安宥真 Yujin":      { personality:1, talent:2 },
-    "Wonyoung":          { personality:4, talent:4 },
-    "Miyeon":            { personality:2, talent:4 },
-    // talent
-    "田中杏奈":          { talent:4 },
-    "金旼炡 Winter":     { talent:4 },
-    "朴志效":            { talent:1 },
-    "林娜琏":            { talent:1 },
-    "金泰妍":            { talent:1 },
+    "薛仑娥 Sullyoon":   { style:2, talent:3 },
+    "裴珠泫 Irene":      { style:3, talent:3 },
+    "金采源":            { style:3, talent:2 },
+    // personality：1=朋友互怼→2，4=温柔陪伴→3
+    "许允真":            { personality:2 },
+    "安宥真 Yujin":      { personality:2, talent:2 },
+    "Wonyoung":          { personality:3, talent:3 },
+    "Miyeon":            { personality:2, talent:3 },
+    // talent：1=歌喉→2，4=容貌→3，3=综艺 不变
+    "田中杏奈":          { talent:3 },
+    "金旼炡 Winter":     { talent:3 },
+    "朴志效":            { talent:2 },
+    "林娜琏":            { talent:2 },
+    "金泰妍":            { talent:2 },
     "平井桃 Momo":       { talent:3 },
     "Natty":             { talent:3 },
-    // vibe
+    // vibe：4=听歌→3，2 不变，3 不变
     "金珍妮 Jennie":     { vibe:3 },
-    "朴彩英 Rosé":       { vibe:4 },
+    "朴彩英 Rosé":       { vibe:3 },
     "金智秀 Jisoo":      { vibe:2 },
     "Lisa":              { vibe:3 },
     "宋雨琦":            { vibe:3 },
     "田小娟":            { vibe:3 },
     "Hwasa":             { vibe:3 },
-    // liveExp
+    // liveExp：4=前排→3，2 不变，3 不变
     "申有娜":            { liveExp:3 },
-    "黄礼志":            { liveExp:4 },
+    "黄礼志":            { liveExp:3 },
     "宫胁咲良 Sakura":   { liveExp:3 },
     "范玉欣 Hanni":      { liveExp:2 },
   };
@@ -603,10 +609,10 @@ function calculateAndShow() {
     score += 15 - Math.abs(idol.bazi   - userData.bazi)   * 1.5;
 
     // 灵魂问答（5题各满8分，总40分）
-    // 每个 answer.trait 均对应 idol 数据库中真实存在的字段
+    // 差值惩罚系数 *1（原*2），让非极端匹配的偶像也有合理分数，避免"锁死"
     userAnswers.forEach(answer => {
       const diff = Math.abs(idol[answer.trait] - answer.value);
-      score += (8 - diff * 2);
+      score += (8 - diff * 1);
     });
 
     // Q5 特殊加分（最多+10）
