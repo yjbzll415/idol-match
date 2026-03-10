@@ -697,7 +697,7 @@ function calculateAndShow() {
     },
   };
 
-  const scoredIdols = idolDatabase.map(idol => {
+  const scoredIdols = idolDatabase.filter(idol => idolPhotoMap[idol.name]).map(idol => {
     let score = 0;
 
     // 基础命理（四项各满15分，总60分）
@@ -798,6 +798,7 @@ function resetAll() {
 </script>
 </body>
 </html>
+
 
 
 
