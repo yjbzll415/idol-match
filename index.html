@@ -426,10 +426,13 @@ const groupData = [
   {g:"MEOVV",        m:["Sooin","李嘉元","田中杏奈","Narin","Ella Gross"]},
   {g:"izna",         m:["崔庭银","方智玟","尹智允","Koko","柳思朗","郑世菲","Mai"]},
   {g:"Kep1er",       m:["金采炫","休宁巴伊叶","崔有真","金多娟","徐永恩","江崎光","沈小婷","姜睿序","坂本舞白"]},
-  {g:"Hearts2Hearts",m:["Yuha","Juun","Carmen","Stella","A-na","Ian","Ye-on","Jiwoo"]},
-  {g:"KiiiKiii",     m:["Jiyu","Leesol","Sui","Haum","Kya"]},
-  {g:"BABYMONSTER",  m:["Ruka","Ahyeon","Rami","Rora","Asa (Ririn)","Pharita","Chiquita"]},
-  {g:"KISS OF LIFE", m:["Julie","Natty","Belle","Haneul"]}
+  {g:"Hearts2Hearts", m:["Yuha","Juun","Carmen","Stella","A-na","Ian","Ye-on","Jiwoo"]},
+{g:"KiiiKiii", m:["Jiyu","Leesol","Sui","Haum","Kya"]},
+{g:"BABYMONSTER", m:["Ruka","Ahyeon","Rami","Rora","Asa (Ririn)","Pharita","Chiquita"]},
+{g:"KISS OF LIFE", m:["Julie","Natty","Belle","Haneul"]},
+{g:"f(x)", m:["Krystal (郑秀晶)"]},
+{g:"WJSN", m:["Seola (雪娥)","Xuan Yi (吴宣仪)","Bona (苞娜)","Exy (秋昭贞)","Soobin (朴秀彬)","Luda (李露朵)","Dawon (南多愿)","Eunseo (恩熙)","Cheng Xiao (程潇)","Meiqi (孟美岐)","Yeoreum (夏天)","Dayoung (多荣)","Yeonjung (俞琏静)"]},
+{g:"EVERGLOW", m:["王怡人"]}
 ];
 
 /*
@@ -495,6 +498,8 @@ let currentQ = 0, userAnswers = [], selectedOption = null;
     "安宥真 Yujin":      { personality:2, talent:2 },
     "Wonyoung":          { personality:3, talent:3 },
     "Miyeon":            { personality:2, talent:3 },
+    "Krystal (郑秀晶)":     { personality:2, talent:3 },
+   
     // talent：1=歌喉→2，4=容貌→3，3=综艺 不变
     "田中杏奈":          { talent:3 },
     "金旼炡 Winter":     { talent:3 },
@@ -600,9 +605,9 @@ const bonusMap = {
         "Hwasa":6, "裴真率":10, "田小娟":5, "柳智敏 Karina":6,
         "Wonyoung":10, "叶舒华":5, "崔庭银":5,
         "内永绘里 Giselle":7, "Lisa":2, "周子瑜":7, "Minnie":6,
-        "黄礼志":5, "坂本舞白":2, "Sooin":8,
-        "方智玟":5, "江崎光":5, "金秋天 Gaeul":5, "Minji":8,
-        "申留真":7, "Ruka":5, "姜谐潾 Haerin":8, "孙彩瑛":8,
+        "黄礼志":5, "Krystal (郑秀晶)":7, "Sooin":8,
+        "方智玟":5, "江崎光":5, "俞定延":8, "Minji":8,
+        "申留真":7, "Ruka":5, "姜谐潾 Haerin":8, "孙彩瑛":8, "Seola (雪娥)":8,
       },
       1: {
         "李惠仁 Hyein":7, "吴海嫄":13, "直井怜 Rei":14,
@@ -642,7 +647,7 @@ const bonusMap = {
         "直井怜 Rei":3, "Wonyoung":3, "朴彩英 Rosé":0, "李嘉元":4,
         "金采源":2, "境萌花":2, "金秋天 Gaeul":6, "金志垣 Liz":2,
         "林允儿":4, "Rora":0, "孙承完 Wendy":0, "朴莳恩":4,
-        "徐永恩":5, "权俞利":6, "宫胁咲良 Sakura":4,
+        "徐永恩":5, "权俞利":6, "宫胁咲良 Sakura":4,"Seola (雪娥)":3,"Bona (苞娜)":3,
       },
       3: {
         "宋雨琦":0, "金旼炡 Winter":0, "裴珠泫 Irene":0,
@@ -654,8 +659,8 @@ const bonusMap = {
       1: {
         "Wonyoung":3, "朴彩英 Rosé":0, "lily":0, "名井南 Mina":0,
         "Minji":0, "金智秀 Jisoo":0, "薛仑娥 Sullyoon":3, "境萌花":0,
-        "宁艺卓 Ningning":0, "中村一叶":2, "范玉欣 Hanni":0, "周子瑜":0,
-        "直井怜 Rei":3, "孙承完 Wendy":0, "朴莳恩":3, "金艺琳 Yeri":0, "李娜炅":3,
+        "宁艺卓 Ningning":0, "中村一叶":2, "范玉欣 Hanni":0, "周子瑜":0,"Bona (苞娜)":2,"Seola (雪娥)":2,
+        "直井怜 Rei":3, "孙承完 Wendy":0, "朴莳恩":3, "金艺琳 Yeri":0, "李娜炅":3,"王怡人":4,
       },
     },
     4: {
@@ -680,13 +685,13 @@ const bonusMap = {
         "Danielle":6, "金智秀 Jisoo":8, "境萌花":7, "凑崎纱夏 Sana":12,
         "金志垣 Liz":13, "Minji":7, "Wonyoung":15, "林娜琏":6,
         "姜谐潾 Haerin":6, "薛仑娥 Sullyoon":10, "李沅禧":7, "宫胁咲良 Sakura":10,
-        "裴珠泫 Irene":8, "直井怜 Rei":9, "名井南 Mina":11, "柳智敏 Karina":8, "外园彩羽":5,
-        "Miyeon":10, "朴慜柱":6, "林允儿":7, "安宥真 Yujin":8,
-        "坂本舞白":3, "中村一叶":7, "金秋天 Gaeul":7,
-        "Ahyeon":6, "叶舒华":8, "金泰妍":2, "李娜炅":8,
+        "裴珠泫 Irene":8, "直井怜 Rei":9, "名井南 Mina":11, "柳智敏 Karina":8, "Krystal (郑秀晶)":8,
+        "Miyeon":10, "朴慜柱":6, "林允儿":7, "安宥真 Yujin":8,"王怡人":8,
+        "坂本舞白":3, "中村一叶":7, "金秋天 Gaeul":7, "Seola (雪娥)":8,
+        "Ahyeon":6, "叶舒华":8, "金泰妍":2, "李娜炅":8, "Bona (苞娜)":8,
       },
       2: {
-        "Minji":5, "Lisa":0, "黄礼志":0, "朴秀荣 Joy":0,
+        "Minji":5, "沈姿润":5, "黄礼志":0, "朴秀荣 Joy":0,
         "Wonyoung":0, "Miyeon":0, "宋雨琦":7, "申有娜":5,
         "金艺琳 Yeri":0, "凑崎纱夏 Sana":0, "Hwasa":0, "叶舒华":0,
         "李彩领":0, "安宥真 Yujin":7, "Minnie":0, "范玉欣 Hanni":0,
@@ -796,6 +801,7 @@ function resetAll() {
 </script>
 </body>
 </html>
+
 
 
 
