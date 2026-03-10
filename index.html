@@ -596,10 +596,10 @@ function calculateAndShow() {
   const bonusMap = {
     1: {
       3: {
-        "裴珠泫 Irene":6, "朴慜柱":12, "宋雨琦":6, "名井南 Mina":8,
+        "裴珠泫 Irene":6, "朴慜柱":12, "宋雨琦":6, "名井南 Mina":10,
         "Hwasa":6, "裴真率":10, "田小娟":5, "柳智敏 Karina":7,
         "Wonyoung":10, "叶舒华":5, "金珍妮 Jennie":6, "崔庭银":5,
-        "内永绘里 Giselle":7, "Lisa":6, "周子瑜":8, "Minnie":6,
+        "内永绘里 Giselle":7, "Lisa":6, "周子瑜":10, "Minnie":6,
         "Ahyeon":5, "黄礼志":5, "坂本舞白":5, "金容仙 Solar":5,
         "方智玟":5, "江崎光":5, "金秋天 Gaeul":5, "金采源":5,
         "申留真":5, "Ruka":5, "姜谐潾 Haerin":5,
@@ -657,20 +657,20 @@ function calculateAndShow() {
         "Wonyoung":4, "朴彩英 Rosé":4, "lily":4, "名井南 Mina":4,
         "Minji":4, "金智秀 Jisoo":4, "薛仑娥 Sullyoon":4, "境萌花":4,
         "宁艺卓 Ningning":4, "中村一叶":4, "范玉欣 Hanni":4, "周子瑜":4,
-         "孙承完 Wendy":4, "朴莳恩":4, "金艺琳 Yeri":4,
+        "直井怜 Rei":4, "孙承完 Wendy":4, "朴莳恩":4, "金艺琳 Yeri":4,
       },
     },
     4: {
       1: {
         "金容仙 Solar":7, "林娜琏":10, "Minnie":6, "金泰妍":12,
-        "文星伊":6, "Ahyeon":8, "朴彩英 Rosé":7, "金旼炡 Winter":7,
-        "尹势银":6, "宁艺卓 Ningning":8, "金采源":6, "Haneul":6,
-        "朴志效":6, "lily":6, "Miyeon":7, "丁辉人":6,
-        "孙承完 Wendy":7, "黄美英":6, "薛仑娥 Sullyoon":5, "朴莳恩":5,
+        "文星伊":10, "Ahyeon":8, "朴彩英 Rosé":8, "金旼炡 Winter":10,
+        "尹势银":6, "宁艺卓 Ningning":10, "金采源":8, "Haneul":6,
+        "朴志效":8, "lily":6, "Miyeon":7, "丁辉人":6,
+        "孙承完 Wendy":9, "黄美英":6, "薛仑娥 Sullyoon":5, "朴莳恩":5,
         "Belle":5, "金智秀 Jisoo":6,
       },
       3: {
-        "中村一叶":8, "Ahyeon":6, "金珍妮 Jennie":12, "田小娟":7,
+        "中村一叶":10, "Ahyeon":6, "金珍妮 Jennie":10, "田小娟":7,
         "内永绘里 Giselle":5, "Lisa":13, "申有娜":6, "平井桃 Momo":13,
         "Natty":4, "崔庭银":5, "柳智敏 Karina":6, "黄礼志":7,
         "坂本舞白":5, "裴珠泫 Irene":6, "Wonyoung":5, "江崎光":5,
@@ -678,14 +678,14 @@ function calculateAndShow() {
         "安宥真 Yujin":6, "Asa (Ririn)":5,
       },
       4: {
-        "金旼炡 Winter":10, "周子瑜":12, "朴彩英 Rosé":7, "田中杏奈":11,
-        "Danielle":6, "金智秀 Jisoo":8, "境萌花":7, "凑崎纱夏 Sana":10,
-        "金志垣 Liz":10, "Minji":7, "Wonyoung":12, "林娜琏":6,
-        "姜谐潾 Haerin":6, "薛仑娥 Sullyoon":10, "李沅禧":7, "宫胁咲良 Sakura":10,
-        "裴珠泫 Irene":8, "直井怜 Rei":7, "名井南 Mina":10, "外园彩羽":6, "直井怜 Rei":8,
-        "金珍妮 Jennie":7, "Miyeon":10, "朴慜柱":6, "姜涩琪":6,
-        "坂本舞白":6, "中村一叶":7, "金秋天 Gaeul":6, "Belle":6,
-        "范玉欣 Hanni":4, "Ahyeon":6, "Jiyu":6, "Sui":6,
+        "金旼炡 Winter":13, "周子瑜":15,"朴彩英 Rosé":7, "田中杏奈":13,
+       "金智秀 Jisoo":8, "凑崎纱夏 Sana":13,
+        "金志垣 Liz":10, "Wonyoung":15, "直井怜 Rei":9, 
+        "姜谐潾 Haerin":6, "薛仑娥 Sullyoon":13, "李沅禧":7, "宫胁咲良 Sakura":10,
+        "裴珠泫 Irene":8, "名井南 Mina":13, 
+        "Miyeon":13, "朴慜柱":6, 
+        "中村一叶":7, "金秋天 Gaeul":6, 
+
       },
       2: {
         "金采源":5, "Lisa":4, "黄礼志":4, "朴秀荣 Joy":4,
@@ -725,7 +725,7 @@ function calculateAndShow() {
 
     // 映射到 75–99% 区间（理论最高约135分）
     const normalized   = Math.max(0, Math.min(1, score / 150));
-    const displayScore = 60 + normalized * 25;
+    const displayScore = 80 + normalized * 15;
 
     return { ...idol, matchScore: displayScore };
   });
@@ -798,9 +798,6 @@ function resetAll() {
 </script>
 </body>
 </html>
-
-
-
 
 
 
