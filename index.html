@@ -595,22 +595,186 @@ function calculateAndShow() {
 
   const bonusMap = {
     1: {
-      3: { "名井南 Mina":8, "周子瑜":8, "Wonyoung":10, "朴慜柱":12 , "裴真率":10 },
-      1: { "李沅禧":12, "吴海嫄":10, "直井怜 Rei":14 },
-      4: { "平井桃 Momo":10, "凑崎纱夏 Sana":10, "柳智敏 Karina":13, "金志垣 Liz":13,
-           "内永绘里 Giselle":11, "安宥真 Yujin":12 , "金珍妮 Jennie":8},
-      2: {"薛仑娥 Sullyoon":8, "中村一叶":7 },
+      3: {
+        // 酷冷系 Dark
+        "名井南 Mina":8, "周子瑜":8, "Wonyoung":10, "朴慜柱":12, "裴真率":10,
+        "金珍妮 Jennie":10, "Lisa":10, "柳智敏 Karina":8, "内永绘里 Giselle":8,
+        "裴珠泫 Irene":10, "Hwasa":10, "宋雨琦":10, "田小娟":8,
+        "姜涩琪":8, "黄礼志":8, "申留真":7, "金采源":7,
+        "Minnie":8, "叶舒华":8, "金容仙 Solar":7,
+        "Ruka":7, "Ahyeon":7, "Julie":8, "Belle":7,
+        "Danielle":6, "姜谐潾 Haerin":7, "金秋天 Gaeul":7,
+        "崔庭银":7, "方智玟":7, "坂本舞白":7, "江崎光":7,
+      },
+      1: {
+        // 可爱系 Cute
+        "李沅禧":12, "吴海嫄":10, "直井怜 Rei":14,
+        "朴彩英 Rosé":8, "金智秀 Jisoo":8, "范玉欣 Hanni":10, "Minji":8,
+        "李惠仁 Hyein":10, "境萌花":10, "外园彩羽":10, "卢玧我":8,
+        "凑崎纱夏 Sana":7, "金志垣 Liz":7, "李贤瑞 Leeseo":10,
+        "孙承完 Wendy":8, "朴秀荣 Joy":8, "金艺琳 Yeri":10,
+        "朴莳恩":8, "尹势银":8, "沈姿润":8, "张叡恩":7, "ISA李采映":7,
+        "裴真率":7, "金智友":8, "张圭珍":7, "lily":8,
+        "卢知宣":7, "李瑞渊":7, "宋河英":7,
+        "Yuha":8, "Carmen":8, "Stella":8, "Ye-on":8,
+        "Jiyu":8, "Leesol":8, "Sui":8, "Haum":8, "Kya":8,
+        "Rami":8, "Rora":8, "Pharita":7, "Chiquita":7,
+        "Haneul":8, "Natty":6,
+        "金采炫":8, "休宁巴伊叶":8, "崔有真":7, "金多娟":7,
+        "徐永恩":7, "沈小婷":7, "姜睿序":7,
+        "Danielle":8, "李惠仁 Hyein":9,
+        "Mai":8, "Koko":8, "郑世菲":7,
+      },
+      4: {
+        // 御姐/性感系
+        "平井桃 Momo":10, "凑崎纱夏 Sana":10, "柳智敏 Karina":13, "金志垣 Liz":13,
+        "内永绘里 Giselle":11, "安宥真 Yujin":12, "金珍妮 Jennie":8,
+        "裴珠泫 Irene":10, "Hwasa":12, "宋雨琦":8, "田小娟":8,
+        "Lisa":8, "金容仙 Solar":8, "文星伊":8, "丁辉人":8,
+        "黄礼志":8, "申有娜":8, "Lia":7,
+        "姜涩琪":8, "朴秀荣 Joy":7,
+        "Minnie":7, "叶舒华":7,
+        "宫胁咲良 Sakura":8, "许允真":7, "洪恩采":7,
+        "Julie":8, "Belle":7,
+        "Ahyeon":8, "Asa (Ririn)":7,
+      },
+      2: {
+        // 清纯系 Pure
+        "薛仑娥 Sullyoon":8, "中村一叶":7,
+        "朴彩英 Rosé":8, "金智秀 Jisoo":8, "林娜琏":8,
+        "名井南 Mina":7, "周子瑜":7, "Minji":8, "范玉欣 Hanni":8,
+        "Wonyoung":8, "直井怜 Rei":8, "李贤瑞 Leeseo":7,
+        "孙承完 Wendy":8, "金艺琳 Yeri":7,
+        "宁艺卓 Ningning":8, "金旼炡 Winter":7,
+        "朴莳恩":8, "尹势银":7, "ISA李采映":7,
+        "lily":7, "裴真率":7,
+        "境萌花":8, "外园彩羽":8, "李沅禧":7,
+        "宫胁咲良 Sakura":7,
+        "Haneul":7, "Natty":6,
+        "坂本舞白":7, "金多娟":7,
+        "Koko":7, "Mai":7,
+      },
     },
     3: {
-      2: { "平井桃 Momo":5, "Miyeon":10, "许允真":12 },
+      2: {
+        // 朋友互怼
+        "平井桃 Momo":5, "Miyeon":10, "许允真":12,
+        "安宥真 Yujin":8, "黄礼志":8, "申有娜":8,
+        "宋雨琦":8, "田小娟":7, "叶舒华":7,
+        "Lisa":8, "金珍妮 Jennie":7,
+        "Hwasa":8, "金容仙 Solar":7,
+        "朴秀荣 Joy":8, "金艺琳 Yeri":7,
+        "申留真":7, "李彩领":7,
+        "Ahyeon":7, "Julie":7,
+        "崔庭银":7, "尹智允":7,
+      },
+      4: {
+        // 像姐姐哄你
+        "凑崎纱夏 Sana":10, "名井南 Mina":10, "孙承完 Wendy":12,
+        "金智秀 Jisoo":10, "朴彩英 Rosé":8, "林娜琏":8,
+        "宫胁咲良 Sakura":10, "金采源":8, "洪恩采":7,
+        "柳智敏 Karina":8, "宁艺卓 Ningning":8,
+        "Minji":8, "范玉欣 Hanni":7,
+        "Wonyoung":8, "直井怜 Rei":8, "金志垣 Liz":7,
+        "裴珠泫 Irene":8, "姜涩琪":7, "金艺琳 Yeri":8,
+        "朴莳恩":8, "尹势银":7,
+        "薛仑娥 Sullyoon":7, "lily":7,
+        "境萌花":8, "外园彩羽":7,
+        "Stella":8, "Ye-on":7, "Carmen":7,
+        "Rora":7, "Pharita":7,
+      },
+      3: {
+        // 保持神秘距离
+        "金珍妮 Jennie":10, "Lisa":8, "裴珠泫 Irene":10,
+        "柳智敏 Karina":10, "内永绘里 Giselle":10, "金旼炡 Winter":8,
+        "姜涩琪":8, "Hwasa":8,
+        "宋雨琦":8, "田小娟":8, "叶舒华":7,
+        "Minnie":8, "黄礼志":7,
+        "姜谐潾 Haerin":10, "李惠仁 Hyein":8,
+        "金秋天 Gaeul":7, "李贤瑞 Leeseo":7,
+        "崔庭银":8, "方智玟":7,
+        "坂本舞白":7, "江崎光":7,
+        "Ruka":8, "Ahyeon":7,
+        "Belle":7, "Julie":7,
+      },
+      1: {
+        // 温柔陪伴
+        "名井南 Mina":10, "周子瑜":10, "薛仑娥 Sullyoon":10,
+        "朴彩英 Rosé":10, "金智秀 Jisoo":8, "Minji":8,
+        "范玉欣 Hanni":8, "Danielle":8,
+        "Wonyoung":8, "直井怜 Rei":8,
+        "孙承完 Wendy":8, "金艺琳 Yeri":8,
+        "宁艺卓 Ningning":8, "中村一叶":8,
+        "朴莳恩":8, "尹势银":7, "沈姿润":7,
+        "lily":7, "裴真率":7,
+        "境萌花":8, "卢玧我":7, "外园彩羽":7,
+        "Haneul":8, "Natty":6,
+        "Yuha":7, "Carmen":7, "Stella":7,
+        "Jiyu":7, "Sui":7,
+        "Rami":7, "Rora":7, "Chiquita":7,
+      },
     },
     4: {
-      1: { "朴志效":6, "林娜琏":10, "金泰妍":12, "金旼炡 Winter":7, "金采源":6, "宁艺卓 Ningning":8, "Ahyeon":8   },
-      3: { "平井桃 Momo":13, "中村一叶":8, "Natty":4 , "Lisa":13, "金珍妮 Jennie":12},
-      4: { "田中杏奈":10, "凑崎纱夏 Sana":10, "名井南 Mina":10,
-           "周子瑜":12, "中村一叶":7, "Wonyoung":12, "宫胁咲良 Sakura":10,"Miyeon":10, "金旼炡 Winter":10, "金志垣 Liz":10, "薛仑娥 Sullyoon":10, "金智秀 Jisoo":12,
-           "裴珠泫 Irene":8 },
-      2: { "金采源":5 },
+      1: {
+        // 歌喉
+        "朴志效":6, "林娜琏":10, "金泰妍":12, "金旼炡 Winter":7, "金采源":6,
+        "宁艺卓 Ningning":8, "Ahyeon":8,
+        "孙承完 Wendy":12, "朴彩英 Rosé":10, "金智秀 Jisoo":8,
+        "金容仙 Solar":10, "文星伊":8, "丁辉人":8,
+        "Miyeon":10, "Minnie":8,
+        "朴秀荣 Joy":7, "金艺琳 Yeri":7,
+        "黄美英":8, "李顺圭":7, "金孝渊":7,
+        "尹势银":8, "朴莳恩":7,
+        "lily":8, "薛仑娥 Sullyoon":7,
+        "Haneul":8, "Belle":7,
+        "Yuha":7, "Juun":7,
+      },
+      3: {
+        // 舞台表现力
+        "平井桃 Momo":13, "中村一叶":8, "Natty":4, "Lisa":13, "金珍妮 Jennie":12,
+        "Hwasa":10, "田小娟":10, "宋雨琦":8,
+        "黄礼志":10, "申有娜":8, "申留真":8,
+        "安宥真 Yujin":8, "Wonyoung":7,
+        "柳智敏 Karina":8, "内永绘里 Giselle":7,
+        "裴珠泫 Irene":8, "姜涩琪":7,
+        "金容仙 Solar":7, "丁辉人":8,
+        "Ahyeon":8, "Asa (Ririn)":7,
+        "Julie":8, "Belle":7,
+        "崔庭银":7, "方智玟":7,
+        "坂本舞白":7, "江崎光":7,
+      },
+      4: {
+        // 美丽容貌
+        "田中杏奈":10, "凑崎纱夏 Sana":10, "名井南 Mina":10,
+        "周子瑜":12, "中村一叶":7, "Wonyoung":12, "宫胁咲良 Sakura":10,
+        "Miyeon":10, "金旼炡 Winter":10, "金志垣 Liz":10,
+        "薛仑娥 Sullyoon":10, "金智秀 Jisoo":12, "裴珠泫 Irene":8,
+        "朴彩英 Rosé":10, "范玉欣 Hanni":10, "Minji":10,
+        "直井怜 Rei":10, "李沅禧":10, "境萌花":10,
+        "柳智敏 Karina":8, "内永绘里 Giselle":8,
+        "林娜琏":8, "朴慜柱":8, "外园彩羽":8,
+        "金珍妮 Jennie":10, "Lisa":8,
+        "姜涩琪":8, "孙承完 Wendy":7,
+        "Danielle":8, "姜谐潾 Haerin":8,
+        "金秋天 Gaeul":8, "李贤瑞 Leeseo":7,
+        "坂本舞白":8, "金采炫":7,
+        "Ahyeon":8, "Rora":7,
+        "Belle":8, "Haneul":7,
+        "Stella":7, "Carmen":7,
+        "Jiyu":7, "Sui":7,
+      },
+      2: {
+        // 综艺感
+        "金采源":5, "Miyeon":10, "朴秀荣 Joy":10, "金艺琳 Yeri":8,
+        "申有娜":8, "黄礼志":8, "李彩领":8,
+        "凑崎纱夏 Sana":7, "范玉欣 Hanni":7,
+        "金珍妮 Jennie":7, "Lisa":7,
+        "Hwasa":8, "文星伊":7, "金容仙 Solar":7,
+        "宋雨琦":7, "叶舒华":7, "Minnie":7,
+        "安宥真 Yujin":7, "Wonyoung":7,
+        "Ahyeon":7, "Julie":7,
+        "崔庭银":6, "尹智允":6,
+      },
     },
   };
 
@@ -641,7 +805,7 @@ function calculateAndShow() {
     score += (Math.random() * 16 - 8);
 
     // 映射到 75–99% 区间（理论最高约135分）
-    const normalized   = Math.max(0, Math.min(1, score / 135));
+    const normalized   = Math.max(0, Math.min(1, score / 150));
     const displayScore = 60 + normalized * 25;
 
     return { ...idol, matchScore: displayScore };
@@ -715,8 +879,6 @@ function resetAll() {
 </script>
 </body>
 </html>
-
-
 
 
 
